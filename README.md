@@ -18,7 +18,7 @@ def square_root(num1 ,num2):
     return (num1 ** 0.5)
 #cube root
 def cube_root(num1 ,num2):
-    return (num1 ** 1/3)
+    return (num1 ** (1/3))
 #circle_area
 def circle_area(pi,r):
     return (pi*r**2)
@@ -31,7 +31,7 @@ try :
     print ("if you want to add enter (+) subtract enter (-) multiply enter (*) divide enter (/) exponent enter (^) square root enter (sqrt) cube root enter (cbrt) circle area enter (circle area) circle perimeter enter (circle perimeter) in opiration slot")   
     
     n1=float(input('enter your first number/radius for circle  : '))
-    op=input('enter your opiration  : ')
+    op=input('enter your opiration  :')
     n2=float(input('enter your second number/any number if you want to calculate a circle or root : '))   
     pi=22/7
    
