@@ -25,10 +25,12 @@ def circle_area(pi,r):
 #circle_perimeter
 def circle_perimeter(pi,r):
     return (pi*2*r)   
+#log
+import math as m
 
 try :
     
-    print ("if you want to add enter (+) subtract enter (-) multiply enter (*) divide enter (/) exponent enter (^) square root enter (sqrt) cube root enter (cbrt) circle area enter (circle area) circle perimeter enter (circle perimeter) in opiration slot")   
+    print ("if you want to add enter (+) subtract enter (-) multiply enter (*) divide enter (/) exponent enter (^) square root enter (sqrt) cube root enter (cbrt) circle area enter (circle area) circle perimeter enter (circle perimeter) log10 enter (log10) log2 enter (log2) in opiration slot")   
     
     n1=float(input('enter your first number/radius for circle  : '))
     op=input('enter your opiration  :')
@@ -68,5 +70,11 @@ elif op=='circle area':
 elif op=='circle perimeter':
     print ("result : " , circle_perimeter (pi,n1))
 
+elif op=='log10':
+    print (m.log10(n1))
+
+elif op=='log2':
+    print (m.log2(n1))
+    
 else:
     print (' invalid opiration')
