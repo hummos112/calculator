@@ -22,8 +22,8 @@ def cube_root(num1):
 #circle_area
 def circle_area(pi,r):
     return (pi*r**2)
-#circle_perimeter
-def circle_perimeter(pi,r):
+#circle_parameter
+def circle_parameter(pi,r):
     return (pi*2*r)   
 #log
 import math as m
@@ -40,7 +40,7 @@ def factorial(num1):
 
 try :
     
-    print ("if you want to add enter (+) subtract enter (-) multiply enter (*) divide enter (/) exponent enter (^) factorial enter (!) square root enter (sqrt) cube root enter (cbrt) circle area enter (circle area) circle perimeter enter (circle perimeter) log10 enter (log10) log2 enter (log2) in operation slot")   
+    print ("if you want to add enter (+) subtract enter (-) multiply enter (*) divide enter (/) exponent enter (^) factorial enter (!) square root enter (sqrt) cube root enter (cbrt) circle area enter (circle area) circle parameter enter (circle parameter) log10 enter (log10) log2 enter (log2) in operation slot")   
     
     n1=float(input('enter your first number/radius for circle  : '))
     op=input('enter your operation  :')
