@@ -14,10 +14,10 @@ def divide(num1 , num2):
 def exponent(num1,num2):
     return (num1 ** num2)
 #square root
-def square_root(num1 ,num2):
+def square_root(num1):
     return (num1 ** 0.5)
 #cube root
-def cube_root(num1 ,num2):
+def cube_root(num1):
     return (num1 ** (1/3))
 #circle_area
 def circle_area(pi,r):
@@ -27,13 +27,23 @@ def circle_perimeter(pi,r):
     return (pi*2*r)   
 #log
 import math as m
+#factorial
+def factorial(num1):
+    if num1==0:
+       return 1
+    if num1==1:
+       return 1
+
+    else:
+        return (num1) * factorial(num1-1)
+
 
 try :
     
-    print ("if you want to add enter (+) subtract enter (-) multiply enter (*) divide enter (/) exponent enter (^) square root enter (sqrt) cube root enter (cbrt) circle area enter (circle area) circle perimeter enter (circle perimeter) log10 enter (log10) log2 enter (log2) in opiration slot")   
+    print ("if you want to add enter (+) subtract enter (-) multiply enter (*) divide enter (/) exponent enter (^) factorial enter (!) square root enter (sqrt) cube root enter (cbrt) circle area enter (circle area) circle perimeter enter (circle perimeter) log10 enter (log10) log2 enter (log2) in operation slot")   
     
     n1=float(input('enter your first number/radius for circle  : '))
-    op=input('enter your opiration  :')
+    op=input('enter your operation  :')
     n2=float(input('enter your second number/any number if you want to calculate a circle or root : '))   
     pi=22/7
    
@@ -59,10 +69,10 @@ elif op=='^':
     print ('result : ' , exponent (n1,n2))    
 
 elif op=='sqrt':
-    print ('result : ' , square_root (n1,n2))
+    print ('result : ' , square_root (n1))
     
 elif op=='cbrt':
-    print ("result : " , cube_root (n1,n2))
+    print ("result : " , cube_root (n1))
 
 elif op=='circle area':
     print ("result : " , circle_area (pi,n1))
@@ -75,6 +85,9 @@ elif op=='log10':
 
 elif op=='log2':
     print (m.log2(n1))
-    
+
+elif op=='!':
+    print ("result : " ,factorial(n1)
+
 else:
     print (' invalid opiration')
